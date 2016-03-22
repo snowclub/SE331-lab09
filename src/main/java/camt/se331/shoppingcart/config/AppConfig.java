@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
 import java.util.Locale;
-
+@Import({PersistenceContext.class})
 @EnableWebMvc
 @Configuration 
 @ComponentScan(basePackages = {"camt.se331.shoppingcart"})
